@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens que se adaptam sozinhas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 720px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1030px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo aúdios</h1>
+    <p>Apredendo a reproduzir aúdio em HTML5</p>
+    <p><strong>Rock</strong>:</p>
+    <audio src="midia/county-lines.mp3" controls></audio>
+    <p><strong>GuanaCast</strong>:</p>
+    <audio src="midia/guanacast-33.mp3" controls></audio>
+    <!-- MP3, WAV, OGG -->
+    <h1>Outra maneira de carregar o aúdio e maior compatibilidade</h1>
+    <audio preload="metadata" controls>
+        <source src="midia/county-lines.mp3" type="audio/mpeg">
+        <source src="midia/county-lines.ogg" type="audio/ogg">
+        <source src="midia/county-lines.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não reproduz aúdio. <a href="midia/county-lines.mp3">Clique aqui</a> e baixe-o.</p>
+        <!--AQUI ELE VAI TENTAR CARREGAR PRIMEIRO O MP3 E DEPOIS O RESTANTE, É INTERESSANTE USAR PARA MAIOR COMPATIBILIDADE EM QUALQUER NAVEGADOR.-->
+    </audio>
+</body>
+</html>
