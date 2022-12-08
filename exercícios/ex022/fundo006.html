@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
-            background-repeat: repeat;
+            background-repeat: no-repeat;
             background-position: center center;
+            background-size: cover;
+            background-attachment: fixed; */
+
+            /* Shorhand - background
+                color > image > position > repeat > {size} > attachment
+            */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
         }
 
@@ -20,7 +28,7 @@
             border: 1px solid darkblue;
             margin: auto;
             padding: 10px;
-            width: 600px;
+            max-width: 600px;
             background-color: white;
         }
     </style>
